@@ -1,7 +1,7 @@
 // CS176L-01
 // Vincent Tuberion
 // Donations.java
-// Last Modified 10/20/2022 22:17 EST
+// Last Modified 10/20/2022 22:21 EST
 
 public class Donations {
     // numIndividual –The number of individual donations
@@ -36,7 +36,7 @@ public class Donations {
                 } else {
                     this.numIndividual--;
                 }
-                System.out.println("Number of Individual Donations: " + numIndividual + " Amount: " + amtIndividual);
+                // System.out.println("Number of Individual Donations: " + numIndividual + " Amount: " + amtIndividual);
             } else if (inputText.startsWith("<business donation>")) {
                 // category = business
                 // Remove formatting text to isolate number string, then convert to usable data as a double
@@ -47,7 +47,7 @@ public class Donations {
                 } else {
                     this.numBusiness--;
                 }
-                System.out.println("Number of Business Donations: " + numBusiness + " Amount: " + amtBusiness);
+                // System.out.println("Number of Business Donations: " + numBusiness + " Amount: " + amtBusiness);
             } else if (inputText.startsWith("<other donation>")){
                 // category = other
                 // Remove formatting text to isolate number string, then convert to usable data as a double
@@ -58,7 +58,7 @@ public class Donations {
                 } else {
                     this.numOther--;
                 }
-                System.out.println("Number of Other Donations: " + numOther + " Amount: " + amtOther);
+                // System.out.println("Number of Other Donations: " + numOther + " Amount: " + amtOther);
             }
         }
     }
