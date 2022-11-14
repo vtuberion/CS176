@@ -7,7 +7,7 @@ package Person;
 
 
 public class Instructor extends Person {
-   double salary;
+   private double salary;
 
    public Instructor(String name, int birthYear, double salary){
       super(name, birthYear);
