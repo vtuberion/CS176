@@ -1,9 +1,9 @@
 // CS176L-01
 // Vincent Tuberion
 // InputOutputFiles.java (using base provided by CS176L-01 eCampus)
-// Last Modified 12/1/2022 15:50 EST
+// Last Modified 12/1/2022 15:53 EST
 
-
+O
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -21,7 +21,7 @@ public class InputOutputFiles {
       boolean goodInput = false; // This sentinel value will be used to indicate if the given input has been checked as valid
       while ((!goodInput) && !(pathName.equals("quit"))) { // Continue to prompt for good input until valid input is provided
          System.out.println("Please input the location of the file you would like to read: (enter 'quit' to exit)");
-         pathName = pathInput.next();
+         pathName = pathInput.nextLine();
          if (!pathName.equals("quit")) {
             // Correct path (for my case): C:\Users\hiPok\IdeaProjects\CS176\src\lines.txt
             try { // Attempt to read a file using the user provided directory
